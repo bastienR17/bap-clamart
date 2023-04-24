@@ -1,0 +1,272 @@
+.hero_title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: url('../../source/backgroubd-activité.png');
+    background-size: cover;
+    background-position: 0%;
+    h1{
+        color: white;
+        font-size: 80px;
+    }
+    .triangle{
+        position: absolute;
+        bottom: 0;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 20vh 100vw 0 0;
+        border-color: #ffffff transparent transparent transparent;
+        transform: scaleY(-1);
+    }
+}
+
+.act{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        width: 70%;
+        font-size: 40px;
+        padding-bottom: 6vh;
+    }
+    p{
+        width: 70%;
+        font-size: 17px;
+        padding-bottom: 2vh;
+        text-align: justify;
+    }
+}
+
+.hero_rendre{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh 0 20vh 0;
+    .sy_rendre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35%;
+        height: 90%;
+
+        .title{
+            height: 40%;
+            h2{
+                font-size: 40px;
+            } 
+            padding-bottom: 20px;
+        }
+        h3{
+            padding-bottom: 5%;
+            font-size: 24px;
+        }
+        .adresse{
+            height: 50%;
+            li{
+                list-style: none;
+            }
+            padding-bottom: 40px;
+        }
+        
+    }
+    .carte{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 35%;
+        img{
+            height: 80%;
+            width: 80%;
+            border-radius: 50%;
+        }
+    }
+}
+.hero_ville{
+    color: #ffffff;
+    position: relative;
+    height: max-content;
+    background-color: #47BFAD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .triangle{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 30vh 100vw 0 0;
+        border-color: #ffffff transparent transparent transparent;
+        // transform: scaleY(-1);
+        transform: scaleX(-1);
+    }
+    .ville{
+        width: 80%;
+        padding-top: 36vh;
+    }
+    h2{
+        font-size: 40px;
+        padding-bottom: 7vh;
+    }
+    p{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .bref{
+        padding-top: 9vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        .icon{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            width: 100%;
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//tablete normal 
+@media (max-width: 768px) {
+
+    .hero_title{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        background: url('../../source/backgroubd-laMairie.png');
+        background-size: cover;
+        background-position: 0%;
+        h1{
+            color: white;
+            font-size: 50px;
+        }
+        .triangle{
+            position: absolute;
+            bottom: 0;
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 20vh 100vw 0 0;
+            border-color: #ffffff transparent transparent transparent;
+            transform: scaleY(-1);
+        }
+    }
+    
+    .hero_rendre{
+        position: relative;
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10vh 5vh 0 5vh;
+        .sy_rendre{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+            height: max-content;
+    
+            .title{
+                height: 40%;
+                padding-bottom: 5%;
+                h2{
+                    font-size: 40px;
+                    
+                } 
+            }
+            h3{
+                padding-bottom: 2%;
+                font-size: 24px;
+            }
+            .adresse{
+                height: 50%;
+                li{
+                    list-style: none;
+                }
+                padding-bottom: 8%;
+            }
+            
+        }
+        .carte{
+            display: none;
+        }
+    }
+    .hero_ville{
+        color: #ffffff;
+        position: relative;
+        height: max-content;
+        background-color: #47BFAD;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .triangle{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 30vh 100vw 0 0;
+            border-color: #ffffff transparent transparent transparent;
+            transform: rotate(0deg);
+        }
+        .ville{
+            width: 80%;
+            padding-top: 36vh;
+        }
+        h2{
+            font-size: 40px;
+            padding-bottom: 7vh;
+        }
+        p{
+            text-align: justify;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .bref{
+            padding-top: 9vh;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            .icon{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                .info{
+                    padding: 40px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    }
