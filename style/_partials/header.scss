@@ -19,9 +19,11 @@ $font-family: "nunito";
         nav {
             position: relative;
             display: flex;
-            justify-content: end;
+            align-items: center;
+            justify-content: space-between;
             width: 70%;
             z-index: 1;
+            gap: 2em;
         }
 
         nav a {
@@ -30,15 +32,26 @@ $font-family: "nunito";
             font-weight: 400;
             font-size: 0.8em;
             padding: 0 15px;
-            color: rgb(0, 0, 0);
+            color: #656565;
             text-decoration: none;
             text-align: center;
             transition: all .3s ease-in-out;
 
-
             &:hover {
-                color: #9FFF7B;
+                color: #E42353;
             }
+        }
+        .button{
+            display: flex;
+            justify-content: end;
+            width: 30%;
+        }
+        #contact{
+            width: 60%;
+            padding: 4px 14px;
+            border-radius: 4px;
+            color: white;
+            background-color: #E42353;
         }
 
 
