@@ -43,7 +43,7 @@
   width: 30%;
 }
 .hero header #contact {
-  width: 60%;
+  width: 70%;
   padding: 4px 14px;
   border-radius: 4px;
   color: white;
@@ -212,7 +212,7 @@
     width: 80%;
   }
   .hero header nav {
-    background-color: #214228;
+    background-color: #ffffff;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -228,8 +228,20 @@
   }
   .hero header nav a {
     color: black;
-    font-size: 1.4em;
-    padding: 50px 0px;
+    font-size: 1em;
+    padding: 20px 0px;
+  }
+  .hero header .button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero header #contact {
+    width: 50%;
+    padding: 4px 14px;
+    border-radius: 4px;
+    color: white;
+    background-color: #E42353;
   }
   .hero header .logo svg {
     width: 200px;
@@ -374,6 +386,130 @@
   cursor: pointer;
 }
 
+.hero_title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background: url("../../source/backgroubd-laMairie.png");
+  background-size: cover;
+  background-position: 0%;
+}
+.hero_title h1 {
+  color: white;
+  font-size: 80px;
+}
+.hero_title .triangle {
+  position: absolute;
+  bottom: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 20vh 100vw 0 0;
+  border-color: #ffffff transparent transparent transparent;
+  transform: scaleY(-1);
+}
+
+.hero_rendre {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 5vh 0 5vh;
+}
+.hero_rendre .sy_rendre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 90%;
+}
+.hero_rendre .sy_rendre .title {
+  height: 40%;
+}
+.hero_rendre .sy_rendre .title h2 {
+  font-size: 40px;
+}
+.hero_rendre .sy_rendre h3 {
+  padding-bottom: 5%;
+  font-size: 24px;
+}
+.hero_rendre .sy_rendre .adresse {
+  height: 50%;
+}
+.hero_rendre .sy_rendre .adresse li {
+  list-style: none;
+}
+.hero_rendre .carte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.hero_rendre .carte img {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.hero_ville {
+  color: #ffffff;
+  position: relative;
+  height: max-content;
+  background-color: #47BFAD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero_ville .triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 30vh 100vw 0 0;
+  border-color: #ffffff transparent transparent transparent;
+  transform: rotate(0deg);
+}
+.hero_ville .ville {
+  width: 80%;
+  padding-top: 36vh;
+}
+.hero_ville h2 {
+  font-size: 40px;
+  padding-bottom: 7vh;
+}
+.hero_ville p {
+  font-size: 17px;
+  font-weight: 500;
+}
+.hero_ville .bref {
+  padding-top: 9vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.hero_ville .bref .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+.hero_ville .bref .icon .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -396,6 +532,10 @@ body {
 
 .active {
   overflow-y: hidden;
+}
+
+#red {
+  color: #E42353;
 }
 
 /*# sourceMappingURL=output.css.map */

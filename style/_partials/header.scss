@@ -47,7 +47,7 @@ $font-family: "nunito";
             width: 30%;
         }
         #contact{
-            width: 60%;
+            width: 70%;
             padding: 4px 14px;
             border-radius: 4px;
             color: white;
@@ -268,7 +268,7 @@ $font-family: "nunito";
             width: 80%;
 
             nav {
-                background-color: #214228;
+                background-color: #ffffff;
                 position: absolute;
                 display: flex;
                 flex-direction: column;
@@ -286,8 +286,20 @@ $font-family: "nunito";
 
             nav a {
                 color: black;
-                font-size: 1.4em;
-                padding: 50px 0px;
+                font-size: 1em;
+                padding: 20px 0px;
+            }
+            .button{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            #contact{
+                width: 50%;
+                padding: 4px 14px;
+                border-radius: 4px;
+                color: white;
+                background-color: #E42353;
             }
 
             .logo {
