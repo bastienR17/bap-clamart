@@ -1,11 +1,12 @@
-$font-family: "roboto";
+$font-family: "nunito";
 
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: max-content;
+    // padding: 15px 10px;
 
     header {
         display: flex;
@@ -13,7 +14,7 @@ $font-family: "roboto";
         flex-direction: row;
         justify-content: space-between;
         width: 90%;
-        height: 20vh;
+        height: 15vh;
 
         nav {
             position: relative;
@@ -182,7 +183,7 @@ $font-family: "roboto";
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: max-content;
 
         header {
             display: flex;
@@ -248,7 +249,7 @@ $font-family: "roboto";
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: max-content;
 
         header {
             width: 80%;

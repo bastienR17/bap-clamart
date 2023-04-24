@@ -1,0 +1,87 @@
+/* =============== Contact Page =============== */
+
+.hero_banner{
+    background-color: #47BFAD;
+    height: 55vh;
+    position: relative;
+    .hero_banner_title{
+        color: #fff;
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.triangle{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30vh 100vw 0 0px;
+    border-color: #47BFAD transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+.contact_form{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        padding: 50px 10px;
+        font-weight: 800;
+        color: rgba(29, 29, 29, 0.72);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        align-items: end;
+        input, textarea{
+            font-family: 'Nunito';
+            padding: 10px 15px;
+            margin: 10px 0;
+            background-color: rgba(71, 191, 173, 0.41);
+            border: 0;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: rgba(29, 29, 29, 0.72);
+            resize: none;
+            width: 100%;
+        }
+        textarea{
+            height: 25vh;
+        }
+        input[type=submit]{
+            background-color: #E42353;
+            width: 10vw;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+.social_section{
+    margin-top: 5vh;
+    margin-bottom: 45vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        padding: 50px 10px;
+        font-weight: 800;
+        color: rgba(29, 29, 29, 0.72);
+    }
+    .social_list{
+        display: flex;
+        gap: 5vw;
+        svg{
+            cursor: pointer;
+        }
+    }
+}
