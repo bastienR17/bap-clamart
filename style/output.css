@@ -1,7 +1,290 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.hero header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 20vh;
+}
+.hero header nav {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  width: 70%;
+  z-index: 1;
+}
+.hero header nav a {
+  font-family: "roboto";
+  display: block;
+  font-weight: 400;
+  font-size: 0.8em;
+  padding: 0 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.hero header nav a:hover {
+  color: #9FFF7B;
+}
+.hero header .logo svg {
+  z-index: 5;
+  width: 100%;
+  height: auto;
+}
+.hero header .log {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20%;
+}
+.hero header .log button {
+  font-size: 17px;
+  color: white;
+  padding: 5px 10px;
+}
+.hero header .log #sing {
+  background: none;
+  border: solid 1px white;
+}
+.hero header .log #login {
+  border: solid 1px #214228;
+  background-color: #214228;
+}
+.hero .texte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "roboto";
+  font-weight: lighter;
+  color: white;
+  font-size: 28px;
+  width: 80%;
+  height: 60vh;
+}
+.hero .texte .titres {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35%;
+  height: 80%;
+  padding: 0 40px;
+}
+.hero .texte .titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero .texte .titre .titre_num {
+  padding: 0 40px;
+}
+.hero .texte .titre span {
+  font-size: 0.9em;
+}
+.hero .texte .titre p {
+  font-size: 0.8em;
+}
+.hero .texte .titre i {
+  font-size: 2.2em;
+  color: #9FFF7B;
+}
+.hero .texte .a1 {
+  justify-content: left;
+}
+.hero .texte .a2 {
+  justify-content: center;
+}
+.hero .texte .a3 {
+  justify-content: end;
+}
+.hero .texte h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  width: 35%;
+}
+.hero .texte span {
+  color: #9FFF7B;
+}
+
+#back {
+  position: absolute;
+  z-index: -2;
+  filter: blur(5px);
+  width: 100%;
+  height: 100vh;
+}
+#back img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.color {
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+  opacity: 70%;
+  width: 100%;
+  height: 101vh;
+}
+
+.nav-toggler {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .hero header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    height: 20vh;
+  }
+  .hero header nav {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 70%;
+  }
+  .hero header nav a {
+    font-size: 0.7em;
+  }
+  .hero header .logo svg {
+    width: 180px;
+  }
+  .hero header ul li {
+    font-size: 0.8em;
+  }
+  .hero header .log button {
+    font-size: 12px;
+  }
+  .hero .texte .titres {
+    display: none;
+  }
+  .hero .texte h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .hero header {
+    width: 80%;
+  }
+  .hero header nav {
+    background-color: #214228;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(100%) translateY(40%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+  }
+  .hero header nav.active {
+    transform: translateX(-10%) translateY(40%);
+  }
+  .hero header nav a {
+    color: black;
+    font-size: 1.4em;
+    padding: 50px 0px;
+  }
+  .hero header .logo svg {
+    width: 200px;
+  }
+  .hero header ul li {
+    font-size: 0.8em;
+  }
+  .hero header .log button {
+    font-size: 12px;
+  }
+  .hero .texte .titres {
+    display: none;
+  }
+  .hero .texte h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 100%;
+  }
+  .nav-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    top: 7vh;
+    right: 7vh;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+  }
+  .line {
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+  }
+  .l1 {
+    transform: translateY(-10px);
+  }
+  .l3 {
+    transform: translateY(10px);
+  }
+  .nav-toggler.active .l1 {
+    transform: translateY(0px) rotate(135deg);
+  }
+  .nav-toggler.active .l2 {
+    opacity: 0;
+  }
+  .nav-toggler.active .l3 {
+    transform: translateY(0px) rotate(-135deg);
+  }
+}
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.active {
+  overflow-y: hidden;
 }
 
 /*# sourceMappingURL=output.css.map */
