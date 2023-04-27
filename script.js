@@ -29,16 +29,15 @@ for (let i = 0; i < zones.length; i++) {
 			const text = zones[i].getAttribute('data-text');
 			infos.innerHTML = text;
 			// Affichage de l'élément infos
-			infos.style.display = 'flex';
-		} else {
+			infos.classList.remove('inactive');
+		} else {	
 			// Si la zone cliquée est la même que la zone sélectionnée précédemment, on la désélectionne
 			zones[i].style.fill = '#47BFAE';
 			selectedZone = null;
 			// Réinitialisation des informations
-			infos.innerHTML = "<h2>Sélectionnez une case</h2><div id='contenu'><p></p><img src='' alt=''></div>";
+			infos.innerHTML = "<h2></h2><div id='contenu'><p></p><img src='' alt=''></div>";
 			// Cachage de l'élément infos
-			infos.style.display = 'none';
+			infos.classList.add('inactive');
 		}
-
 	});
 }
