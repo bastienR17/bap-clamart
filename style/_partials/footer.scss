@@ -1,4 +1,4 @@
-footer{
+footer {
     margin-top: 10vh;
     width: 100vw;
     height: 30vh;
@@ -8,44 +8,104 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    .footer_container{
+
+    .footer_container {
         width: 35%;
         height: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
         flex-direction: column;
-        h1{
+
+        h1 {
             font-family: 'Nunito';
             font-style: normal;
             font-weight: 700;
             color: rgba(0, 0, 0, 0.55);
             font-size: 1.6em;
         }
-        .contact_footer{
+
+        .contact_footer {
             display: flex;
             gap: 55px;
         }
-        .social_list{
+
+        .social_list {
             display: flex;
             gap: 3vw;
-            svg{
+
+            svg {
                 cursor: pointer;
             }
         }
     }
 }
 
-.footer_alt{
+.footer_alt {
     background: #47BFAD;
     color: #ffffff;
-    div{
-        h1{
+
+    div {
+        h1 {
             color: #ffffff;
         }
-        a{
-            path{
+
+        a {
+            path {
                 fill: #ffffff;
+            }
+        }
+    }
+}
+
+//tablete normal 
+@media (max-width: 1124px) {
+    footer {
+        margin-top: 10vh;
+        height: max-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+
+        .footer_container {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-direction: column;
+
+            h1 {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                color: rgba(0, 0, 0, 0.55);
+                font-size: 1.6em;
+                padding-bottom: 1em;
+            }
+
+            h2 {
+                font-size: 1em;
+            }
+
+            .contact_footer {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .social_list {
+                display: flex;
+                justify-content: space-between;
+                gap: 3vw;
+                width: 80%;
+
+                svg {
+                    width: 35px;
+                    height: auto;
+                    cursor: pointer;
+                }
             }
         }
     }
